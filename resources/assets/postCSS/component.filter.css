@@ -1,0 +1,108 @@
+/*------------------------------------*\
+    # component.filter
+\*------------------------------------*/
+
+.filter {
+    border-bottom: 1px solid color($color-secondary a(.2));
+    margin-bottom: calc($unit * 5);
+    padding-bottom: calc($unit * 5);
+
+    &--header {
+        @media (--screen-to-lrg) {
+            margin-bottom: calc($unit * 3);
+            padding-bottom: calc($unit * 3);
+        }
+
+        @media (--screen-from-lrg) {
+            display: flex;
+            align-items: center;
+        }
+
+        &:not(.active) {
+            @media (--screen-from-med) and (--screen-to-lrg) {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.filter__holder {
+    @media (--screen-to-lrg) {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+
+.filter__title {
+    &--primary {
+        flex: 1 1 auto;
+        @mixin type-scale $type-large, 7;
+        font-family: $ff-sans;
+        position: relative;
+
+        @media (--screen-to-lrg) {
+            color: $color-primary;
+            cursor: pointer;
+            margin-bottom: calc($unit * 2);
+
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 0; 
+                height: 0; 
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent;
+                border-bottom: 3px solid $color-primary;
+                transform: rotate(180deg);
+                transition: all .15s ease-in-out;
+            }
+
+            &.active:after {
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    &--secondary {
+        @mixin type-scale $type-base, 6;
+        font-family: $ff-sans;
+        font-weight: $type-weight-bold;
+        margin-bottom: calc($unit * 4);
+    }
+
+    img {
+        margin-right: calc($unit * 2);
+        margin-top: -2px;
+    }
+
+}
+
+.filter__clear {
+    flex: 0 1 auto;
+    @media (--screen-to-lrg) {
+        display: none;
+    }
+    
+    &--mobile {
+        text-align: right;
+        margin-bottom: calc($unit * 2);
+        
+        @media (--screen-from-lrg) {
+            display: none;
+        }
+    }
+}
+
+.filter__input-flex {
+    display: flex;
+}
+
+.filter__input {
+    lost-column: 1/2 2 12px flex;
+}

@@ -1,0 +1,70 @@
+/*------------------------------------*\
+    # component.range
+\*------------------------------------*/
+
+.range {
+    width: 100%;
+    background-color: #d6d6d6;
+    height: 8px;
+    border-radius: 4px;
+}
+
+.range__slider {
+    position: relative;
+    left: 20%;
+
+    /*  Width = second input value - first input value */
+    width: 50%;
+    background-color: color($color-secondary a(0.8));
+    height: 8px;
+}
+
+.range__slider__value {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #009fda;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+}
+
+.range__slider__value--begin {
+    left: -4px;
+    top: -4px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        transform: scale(1.25);
+    }
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+
+    &:active,
+    &:focus {
+        background-color: $color-primary;
+    }
+}
+
+.range__slider__value--end {
+    right: -4px;
+    top: -4px;    
+
+    &:hover,
+    &:active,
+    &:focus {
+        transform: scale(1.25);
+    }
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+
+    &:active,
+    &:focus {
+        background-color: $color-primary;
+    }
+}

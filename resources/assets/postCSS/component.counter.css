@@ -1,0 +1,114 @@
+/*------------------------------------*\
+    # component.counter
+\*------------------------------------*/
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc($unit * 2);
+
+    svg {
+        path {
+            stroke: $color-primary;
+        }
+    }
+
+    &:active,
+    &:focus {
+        svg {
+            path {
+                stroke: $color-secondary;
+            }
+        }
+    }
+}
+
+.counter--disabled {
+    .counter__value,
+    .counter__minus,
+    .counter__plus {
+        cursor: not-allowed;
+    }
+
+    .counter__minus,
+    .counter__plus {
+        border: 1px solid $color-quaternary;
+    }
+
+    svg {
+        path {
+            stroke: $color-quaternary;
+        }
+    }
+
+    &:hover {
+        .counter__minus,
+        .counter__plus {
+            border: 1px solid $color-quaternary;
+        }
+    }
+
+    &:active,
+    &:focus {
+        .counter__minus,
+        .counter__plus {
+            border: 1px solid $color-quaternary;
+        }
+
+        svg {
+            path {
+                stroke: $color-quaternary;
+            }
+        }
+    }
+}
+
+.counter__minus,
+.counter__plus {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid $color-primary;
+    padding-top: 0;
+    padding-bottom: 0;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    transition: all .15s ease-in-out;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &:hover {
+        border: 2px solid $color-primary;
+    }
+
+    &:active,
+    &:focus {
+        border: 2px solid $color-primary;
+    }
+}
+
+.counter__minus {
+    background-image: url("data:image/svg+xml;utf8,<svg width='13' height='1' viewBox='0 0 13 1' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0.5H13' stroke='%23009fda' /></svg>");
+}
+
+.counter__plus {
+    background-image: url("data:image/svg+xml;utf8,<svg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 6.5H13' stroke='%23009fda' /><path d='M6.5 13L6.5 -4.76837e-07' stroke='%23009fda' /></svg>");
+}
+
+.counter__value {
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+    @mixin type-scale $type-small, 5;
+    opacity: 0.6;
+    max-width: calc($unit * 20);
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}

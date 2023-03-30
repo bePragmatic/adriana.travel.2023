@@ -1,0 +1,121 @@
+/*------------------------------------*\
+    # component.d-item
+\*------------------------------------*/
+
+.d-item {
+  margin-bottom: calc($unit * 8);
+
+  &:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  @media (--screen-from-sml) {
+    display: flex;
+    border-bottom: 1px solid color($color-secondary a(0.1));
+    padding-bottom: calc($unit * 8);
+  }
+}
+
+.d-item__image {
+  @media (--screen-from-sml) {
+    min-width: 140px;
+    max-width: 140px;
+    margin-right: calc($unit * 8);
+  }
+
+  @media (--screen-from-xlrg) {
+    min-width: 280px;
+    max-width: auto;
+  }
+
+  img {
+    border-radius: 16px;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      border-bottom-right-radius: 0;
+    }
+
+    @media (--screen-to-sml) {
+      width: 100%;
+      margin-bottom: calc($unit * 2);
+    }
+  }
+}
+
+.d-item__content {
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .split-view {
+    @media (--screen-from-sml) {
+      flex: 1 1 auto;
+      margin-bottom: calc($unit * 2);
+    }
+  }
+
+  @media (--screen-to-sml) {
+    flex-direction: column-reverse;
+  }
+}
+
+.d-item__name {
+  @mixin type-scale $type-base, 6;
+  align-self: flex-start;
+  font-family: $ff-sans;
+
+  @media (--screen-from-sml) {
+    @mixin type-scale $type-medium, 7;
+  }
+}
+
+.d-item__rating {
+  @mixin type-scale $type-small, 5;
+  width: 72px;
+  align-self: flex-start;
+  color: color($color-secondary a(0.6));
+  text-align: right;
+
+  @media (--screen-to-sml) {
+    position: absolute;
+    right: 0;
+    margin-top: calc($unit * -6);
+  }
+}
+
+.d-item__description {
+  flex: 1 1 auto;
+  @mixin type-scale $type-small, 5;
+  margin-bottom: calc($unit * 2);
+
+  @media (--screen-to-sml) {
+    display: none;
+  }
+}
+
+.d-item__price {
+  @mixin type-scale $type-medium, 7;
+  font-weight: $type-weight-bold;
+  color: $color-secondary;
+
+  @media (--screen-from-sml) {
+    @mixin type-scale $type-large, 7;
+  }
+}
+
+.d-item__beds {
+  @mixin type-scale $type-medium, 7;
+  padding-left: calc($unit * 1);
+  color: color($color-secondary a(0.6));
+}
+
+.d-item__rating {
+  img {
+    margin-top: -4px;
+  }
+}

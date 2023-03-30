@@ -1,0 +1,84 @@
+/*------------------------------------*\
+    # component.toggle
+\*------------------------------------*/
+
+.toggle {
+	cursor: pointer;
+    display: inline-block;
+    
+    &--full-width {
+        width: 100%;
+    }
+}
+
+.toggle-switch {
+	display: inline-block;
+	background: color($color-quaternary a(0.2));
+	border-radius: 16px;
+	width: 48px;
+	height: 24px;
+	position: relative;
+	vertical-align: middle;
+    transition: background 0.25s;
+    
+	&:before,
+	&:after {
+		content: "";
+    }
+    
+	&:before {
+		display: block;
+		background: linear-gradient(to bottom, #fff 0%,#eee 100%);
+		border-radius: 50%;
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+        transition: left 0.25s;
+        background: $color-secondary;
+    }
+    
+	.toggle:hover &:before {
+		background: linear-gradient(to bottom, #fff 0%,#fff 100%);
+        background: $color-secondary;
+    }
+    
+	.toggle-checkbox:checked + & {
+		
+		&:before {
+            left: 27px;
+            background: $color-primary;
+		}
+    }
+
+    .toggle-checkbox:disabled + & {
+		
+		&:before {
+            opacity: .4;
+		}
+    }
+    
+    .toggle--full-width & {
+        float: right;
+    }
+}
+
+.toggle-checkbox {
+	position: absolute;
+	visibility: hidden;
+}
+
+.toggle-label {
+    .toggle--left & {
+        margin-left: 5px;
+        position: relative;
+        top: 2px;
+    }
+    
+    .toggle--right & {
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+    }
+}

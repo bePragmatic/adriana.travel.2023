@@ -1,0 +1,299 @@
+.serviceandactivities__hero {
+  background: url('../images/MaskGroup.jpg') rgba(16, 48, 76, 0.4);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  height: 400px;
+  @media (--screen-to-med) {
+    height: $mobile-header-height;
+    min-height: 400px;
+  }
+}
+
+.transfersandtours__hero {
+  background: url('../images/van031.jpg') rgba(16, 48, 76, 0.7);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: 0% 90%;
+  height: 400px;
+
+  @media (--screen-to-med) {
+    height: $mobile-header-height;
+    min-height: 400px;
+  }
+}
+
+.rentaboat__hero {
+  background: url('../images/boat02.jpg') rgba(16, 48, 76, 0.4);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: 20% 90%;
+  height: 400px;
+
+  @media (--screen-to-med) {
+    height: $mobile-header-height;
+    min-height: 400px;
+  }
+}
+
+.transfer-boat-img {
+  width: 100%;
+  background: url('../images/boatgraph.svg') no-repeat center center;
+  background-size: contain;
+  margin-left: 1em;
+}
+.padding__bottom__0 {
+  padding-bottom: 0;
+}
+
+.container__row__center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.container__row__center-s {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rogo-sub-new {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.subtitle__alignment {
+  color: #ffffff;
+  max-width: 450px;
+  text-align: center;
+}
+
+.service-header {
+  height: 528px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.services__list {
+  padding: calc($unit * 6) 0;
+  border-radius: $global-radial-large;
+
+  @media (--screen-from-med) {
+    padding: calc($unit * 10) calc($unit * 12);
+  }
+
+  @media (--screen-from-lrg) {
+    margin-top: calc($unit * -6);
+  }
+}
+
+.transportation__maxwidth {
+  max-width: 274px;
+  min-height: 100px;
+  @media (--screen-to-med) {
+    max-width: none;
+  }
+}
+
+.transfer__maxwidth {
+  max-width: 274px;
+  min-height: 100px;
+  @media (--screen-to-med) {
+    max-width: none;
+    min-height: 0;
+  }
+}
+
+.accommodation__list__services {
+  background: white;
+  padding: calc($unit * 6) 0;
+  border-radius: $global-radial-large;
+
+  @media (--screen-from-med) {
+    padding: calc($unit * 10) calc($unit * 12);
+  }
+
+  @media (--screen-from-lrg) {
+    margin-top: calc($unit * -6);
+  }
+}
+
+.title__cyrcle__container {
+  justify-content: space-between;
+  width: 95%;
+}
+
+.cyrcle__icon__position {
+  position: absolute;
+  z-index: 1;
+}
+
+.margin__left__20 {
+  margin-left: 20px;
+}
+
+.padding__left__0 {
+  padding-left: 0 !important;
+}
+.padding__left__7 {
+  padding-left: 7rem !important;
+}
+
+.padding__left__7em {
+  padding-left: 7vw !important;
+}
+
+.margin-left--1 {
+  margin-left: 1em;
+}
+
+.margin-left--2 {
+  margin-left: 2em;
+}
+
+.services__blue {
+  /* Medium Bold */
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  /* identical to box height, or 126% */
+
+  letter-spacing: -0.04em;
+
+  /* Rogoznica Dark Blue */
+
+  color: #10304c !important;
+}
+
+.services-box--item {
+  flex: 1;
+  display: flex;
+}
+
+.van-img-container {
+  max-width: 900px;
+  margin-right: 1em;
+  @media (--screen-to-sml) {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+.transfer-box--item {
+  flex: 1;
+  display: flex;
+  @media (--screen-to-sml) {
+    padding-top: 1em;
+    flex: 0;
+  }
+}
+
+.flex-to-none {
+  flex: 1;
+}
+
+@media only screen and (max-width: 1290px) {
+  .media__to__column--dole {
+    flex-direction: column !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .media__to__column {
+    flex-direction: column;
+  }
+  /* .flex-to-none {
+    flex: none !important;
+  } */
+  .media-padding-left--none {
+    padding-left: 0 !important;
+  }
+  .cyrcle__icon__position {
+    display: none;
+  }
+}
+
+.transfer-media {
+  @media (--screen-to-sml) {
+    padding-top: 3em;
+  }
+}
+
+.media-to-padding-top {
+  @media (--screen-to-med) {
+    padding-top: 10vw;
+  }
+}
+
+.subtitle-services__padding-bottom {
+  @media (--screen-to-med) {
+    padding-bottom: 5vw;
+  }
+}
+
+.media-to-header {
+  @media (--screen-to-med) {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    height: 75%;
+  }
+}
+
+.services--padding-top-3 {
+  padding-top: 3rem;
+  @media (--screen-to-med) {
+    padding-top: 0;
+  }
+}
+
+.services--padding-left-0 {
+  padding-left: 0 !important;
+  @media (--screen-to-med) {
+    padding-right: 0;
+  }
+}
+
+.payment-hero {
+  background: url('../images/MaskGroup.jpg') rgba(16, 48, 76, 0.4);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  height: 400px;
+  margin-bottom: -1.5em;
+}
+
+.payment-header__props {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (--screen-to-xlrg) {
+    height: 60%;
+  }
+  @media (--screen-to-xsml) {
+    height: 65%;
+  }
+}
+
+.lost-payment__textarea-container {
+  lost-column: 4/5;
+}
+
+.lost-payment__image-container {
+  lost-column: 1/5;
+  display: flex;
+  justify-content: center;
+}
+
+.lost-payment__image-container img {
+  min-width: 90px;
+}

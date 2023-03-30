@@ -1,0 +1,10 @@
+<svg width="142" height="112" viewBox="0 0 142 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M73.25 88.75C73.25 94.3195 75.4625 99.661 79.4008 103.599C83.339 107.538 88.6805 109.75 94.25 109.75C99.8195 109.75 105.161 107.538 109.099 103.599C113.038 99.661 115.25 94.3195 115.25 88.75V19.75" stroke="#10304C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M65.75 88.75H80.75" stroke="#10304C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M94.25 34.75H40.25C35.2794 34.75 31.25 38.7794 31.25 43.75V67.75C31.25 72.7206 35.2794 76.75 40.25 76.75H94.25C99.2206 76.75 103.25 72.7206 103.25 67.75V43.75C103.25 38.7794 99.2206 34.75 94.25 34.75Z" stroke="#10304C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M58.25 76.75L62.75 58.75H71.75L76.25 76.75" stroke="#10304C" stroke-width="2" stroke-miterlimit="10"/>
+<circle cx="42.5" cy="99.5" r="4.5" stroke="#009FDA" stroke-width="2"/>
+<circle cx="9.5" cy="39.5" r="8.5" stroke="#009FDA" stroke-width="2"/>
+<circle cx="132.5" cy="68.5" r="8.5" stroke="#009FDA" stroke-width="2"/>
+<circle cx="36.5" cy="5.5" r="4.5" stroke="#009FDA" stroke-width="2"/>
+</svg>

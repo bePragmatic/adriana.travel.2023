@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    # component.field
+\*------------------------------------*/
+
+.field {
+    /**
+     * Field base
+     */
+    margin-top: calc($unit * 3);
+    color: $color-text;
+}
+
+.field--flex {
+    display: flex;
+    align-items: center;
+}
+
+.field--disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.field__lbl {
+    @mixin type-scale $type-small, 5;
+    margin-top: calc($unit * 4);
+    font-family: $ff-sans;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-dark;
+    opacity: 0.7;
+}
+
+.field__lbl--ghost {
+    background: url('../../../public/assets/pencil.png') no-repeat scroll;
+    background-position: 0 3px;
+    padding-left: calc($unit * 6);
+    color: $color-primary;
+}
+
+.field__lbl--ghost--disabled {
+    background: url('../../../public/assets/pencil-gray.png') no-repeat scroll;
+    color: $color-quaternary;
+}
+
+.field__error {
+    display: block;
+    margin-top: calc($unit * 1);
+    @mixin type-scale $type-tiny, 4;
+    color: $color-warning;
+}
+
+.field__text {
+    @mixin type-scale $type-small, 5;
+    flex: 1 1 auto;
+    color: color($color-text a(.8));
+
+}
+
+.field__content {
+    flex: 0 1 auto;
+}

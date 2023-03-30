@@ -1,0 +1,129 @@
+/*------------------------------------*\
+    # utils.type
+\*------------------------------------*/
+
+.t-bold {
+    font-weight: $type-weight-bold;
+}
+
+/* .t-light {
+    font-weight: $type-weight-light;
+} */
+
+.t-center {
+    text-align: center;
+}
+
+.t-upper {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.t-upperext {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.t-serif {
+    font-family: $ff-serif;
+}
+
+.t-sans {
+    font-family: $ff-sans;
+}
+
+/* Sizes */
+.t-alpha {
+    font-size: responsive 43px 53px;
+    font-range: 440px 1440px;
+
+    line-height: responsive 48px 64px;
+    line-height-range: 440px 1440px;
+}
+
+.t-beta {
+    font-size: responsive 36px 43px;
+    font-range: 440px 1440px;
+
+    line-height: responsive 42px 48px;
+    line-height-range: 440px 1440px;
+}
+
+.t-gamma {
+    font-size: responsive 31px 36px;
+    font-range: 440px 1440px;
+
+    line-height: responsive 36px 40px;
+    line-height-range: 440px 1440px;
+}
+
+.t-delta {
+    font-size: responsive 21px 31px;
+    font-range: 440px 1440px;
+
+    line-height: responsive 28px 36px;
+    line-height-range: 440px 1440px;
+}
+
+.t-epsilon {
+    @mixin type-scale $type-large, 7;
+}
+
+.t-zeta {
+    @mixin type-scale $type-medium, 7;
+}
+
+.t-eta {
+    @mixin type-scale $type-base, 6;
+}
+
+.t-theta {
+    @mixin type-scale $type-small, 5;
+}
+
+.t-iota {
+    @mixin type-scale $type-tiny, 4;
+}
+
+
+/* Colors */
+.t-primary {
+    color: $color-primary;
+}
+
+.t-secondary {
+    color: $color-secondary;
+}
+
+.t-dark {
+    color: $color-dark;
+}
+
+.t-light {
+    color: $color-light;
+}
+
+.t-smcp {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+}
+
+/* Shorten long links */
+.t-shorten {
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}

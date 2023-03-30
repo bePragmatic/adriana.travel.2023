@@ -1,0 +1,136 @@
+/*------------------------------------*\
+    # base.typography
+\*------------------------------------*/
+
+/**
+ * Headings
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: $ff-serif;
+    font-weight: $type-weight-regular;
+    color: color($brand-dark-blue a(.9));
+}
+
+h1 {
+    font-size: responsive 43px 53px;
+    font-range: 440px 1440px;
+
+    line-height: responsive 48px 64px;
+    line-height-range: 440px 1440px;
+}
+
+h2 {
+    font-size: responsive 36px 43px;
+    font-range: 440px 1440px;
+
+    line-height: responsive 42px 48px;
+    line-height-range: 440px 1440px;
+}
+
+h3 {
+    font-size: responsive 31px 36px;
+    font-range: 440px 1440px;
+
+    line-height: responsive 36px 40px;
+    line-height-range: 440px 1440px;
+}
+
+h4 {
+    font-size: responsive 21px 31px;
+    font-range: 440px 1440px;
+
+    line-height: responsive 28px 36px;
+    line-height-range: 440px 1440px;
+}
+
+h5,
+h6 {
+    font-size: responsive 19px 21px;
+    font-range: 440px 1440px;
+
+    line-height: responsive 28px 28px;
+    line-height-range: 440px 1440px;
+}
+
+/**
+ * Paragraphs
+ */
+p {
+    margin: 0;
+    font-family: $ff-sans;
+}
+
+/**
+ * Lists (ol, ul, dd)
+ */
+ol,
+ul,
+dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ol {
+    list-style: decimal;
+}
+
+button {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/**
+ * Anchors
+ */
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+    transition: all .1s ease-in;
+
+    &:link {
+    }
+
+    &:hover {
+        color: color($color-primary blackness(+25%));
+    }
+
+    &:focus {
+        color: color($color-primary blackness(+25%));
+    }
+
+    &:visited {
+    }
+}
+
+/**
+ * Typographic details
+ */
+
+hr {
+    padding: calc($unit * 2) 0;
+    border: 0;
+    border-bottom: 1px solid color(white blackness(+15%));
+}
+
+b,
+strong {
+    font-weight: $type-weight-bold;
+}
+
+/**
+ * Tables
+ */
+
+table {
+    th {
+        text-align: left;
+    }
+}

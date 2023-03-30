@@ -1,0 +1,9 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="40" cy="40" r="40" fill="white"/>
+<path d="M17.8999 25.5H43.6999" stroke="#10304C" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M17.8999 17.5H38.9999L54.5999 42.4" stroke="#10304C" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M17.8999 62.5C20.7999 62.5 23.4999 61.2 25.3999 59.1C28.9999 63.2 35.2999 63.7 39.4999 60C39.7999 59.7 40.0999 59.4 40.3999 59.1C43.9999 63.2 50.2999 63.7 54.4999 60C54.5999 59.9 54.7999 59.7 54.8999 59.6C56.7999 61.4 59.2999 62.5 61.8999 62.5" stroke="#009FDA" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M17.8999 50.5C20.7999 50.5 23.4999 49.2 25.3999 47.1C28.9999 51.2 35.2999 51.7 39.4999 48C39.7999 47.7 40.0999 47.4 40.3999 47.1C43.9999 51.2 50.2999 51.7 54.4999 48C54.5999 47.9 54.7999 47.7 54.8999 47.6C56.7999 49.4 59.2999 50.5 61.8999 50.5" stroke="#009FDA" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M55 37.6C55.1 37.5 55.3 37.3 55.4 37.2C57.3 39 59.8 40.1 62.4 40.1" stroke="#009FDA" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M18.3999 40.1C21.2999 40.1 23.9999 38.8 25.8999 36.7C29.4999 40.8 35.7999 41.3 39.9999 37.6C40.2999 37.3 40.5999 37 40.8999 36.7C42.8999 39 45.7999 40.2 48.6999 40.1" stroke="#009FDA" stroke-miterlimit="10" stroke-linecap="square"/>
+</svg>

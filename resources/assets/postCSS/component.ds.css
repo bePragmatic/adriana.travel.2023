@@ -1,0 +1,162 @@
+/*------------------------------------*\
+    # component.ds
+\*------------------------------------*/
+
+.ds {
+  margin-top: calc($unit * 7);
+
+  @media (--screen-from-med) {
+    lost-center: 100%;
+    margin-top: calc($unit * 30);
+  }
+}
+
+.ds--primary {
+  .ds__copy {
+    @media (--screen-from-med) {
+      lost-column: 8/12;
+      lost-offset: -5/12;
+    }
+  }
+
+  .ds__image {
+    @media (--screen-from-med) {
+      lost-column: 5/12;
+      lost-move: 7/12;
+    }
+  }
+}
+
+.ds--secondary {
+  .ds__copy {
+    @media (--screen-from-med) {
+      lost-column: 8/12;
+      lost-offset: -1/12;
+    }
+  }
+
+  .ds__image {
+    @media (--screen-from-med) {
+      lost-column: 5/12;
+    }
+  }
+}
+
+.ds__copy {
+  align-self: flex-start;
+  background: white;
+  border-radius: 16px;
+  z-index: 2;
+
+  @media (--screen-from-med) {
+    padding: calc($unit * 8) calc($unit * 10);
+    margin-top: calc($unit * -10);
+  }
+}
+
+.ds__copy__columns {
+  .ds--secondary &,
+  .ds--primary & {
+    @media (--screen-from-lrg) {
+      column-count: 2;
+      column-gap: calc($unit * 8);
+    }
+  }
+}
+
+.ds__copy__title {
+  @mixin type-scale $type-large, 7;
+  margin-bottom: calc($unit * 7);
+
+  @media (--screen-from-med) {
+    lost-column: 6/12;
+    @mixin type-scale $type-xlarge, 10;
+  }
+}
+
+.ds__copy__subtitle {
+  @mixin type-scale $type-medium, 7;
+  font-weight: $type-weight-bold;
+  margin-bottom: calc($unit * 3);
+}
+
+.ds__image {
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+
+  margin-bottom: calc($unit * 3);
+
+  min-height: 200px;
+
+  @media (--screen-from-sml) {
+    min-height: 270px;
+  }
+
+  @media (--screen-from-med) {
+    lost-column: 5/12;
+
+    min-height: 370px;
+  }
+}
+
+.ds__image--zadar {
+  background-image: url('/assets/images/zadar-small.jpg');
+}
+
+.ds__image--sibenik {
+  background-image: url('/assets/images/croatia-small.jpg');
+}
+
+.ds__image--split {
+  background-image: url('/assets/images/diokletian-small.jpg');
+}
+
+.ds__image--dubrovnik {
+  background-image: url('/assets/images/dubrovnik-small.jpg');
+}
+
+.ds__noted {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  margin: calc($unit * 10) 0 calc($unit * 10) 0;
+
+  @media (--screen-from-med) {
+    margin: calc($unit * 10) 0 calc($unit * 40) 0;
+  }
+
+  @media (--screen-from-xlrg) {
+    width: 80%;
+  }
+
+  h3 {
+    @mixin type-scale $type-large, 7;
+    margin-bottom: calc($unit * 6);
+
+    @media (--screen-from-lrg) {
+      max-width: 10em;
+    }
+
+    @media (--screen-to-lrg) {
+      flex: 0 1 100%;
+    }
+  }
+
+  &__item {
+    @mixin type-scale $type-small, 4;
+    flex: 1;
+    text-align: center;
+    padding: 0 calc($unit * 2) calc($unit * 6) calc($unit * 2);
+
+    @media (--screen-to-lrg) {
+      flex: 1 0 50%;
+    }
+
+    img {
+      margin-bottom: calc($unit * 4);
+    }
+  }
+}

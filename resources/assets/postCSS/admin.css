@@ -1,0 +1,167 @@
+/**
+* Title: Protogator
+* Author/s: Prototyp
+* CSS build platform: Yarn
+* CSS development build command: yarn
+* CSS production build command: yarn build
+* CSS processor: PostCSS
+* CSS processor usage: autoprefixing, nesting, variables, minification, pxtorem, color functions
+* CSS name convention: BEM
+* Global indentation: 4 spaces
+* Global units: px
+* Global prefix: none
+* Browser support: IE10+, last 3 versions of modern browsers
+* Additional notes:
+*/
+
+/**
+* Import: vars
+* Description: variables
+*/
+@import 'vars.globals.css';
+@import 'vars.typography.css';
+@import 'vars.responsive.css';
+@import 'vars.colors.css';
+/*edo*/
+/**
+* Import: tools
+* Description: tools like typomatic and other mixins / libraries
+*/
+@import 'tools.typomatic.css';
+
+/**
+* Import: generic
+* Description: normalize or reset CSS, box sizing
+*/
+/*@import 'generic.boxsizing.css';*/
+
+/**
+* Import: base
+* Description: base structural stylings for setting the body, typography
+* and other base styles (no classes should be added here)
+*/
+@import 'base.globals.css';
+@import 'base.typography.css';
+
+/**
+* Import: component
+* Description: cross project reusable
+*/
+/*@import 'component.wrapper.css';*/
+/*@import 'component.btn.css';*/
+/*@import 'component.btn-group.css';*/
+@import 'component.input.css';
+@import 'component.field.css';
+@import 'component.toggle.css';
+@import 'component.pagination.css';
+@import 'component.counter.css';
+@import 'component.range.css';
+/*@import 'component.picker.css';*/
+@import 'component.split-view.css';
+@import 'component.filter.css';
+@import 'component.d-item.css';
+@import 'component.ds.css';
+
+/**
+* Import: block
+* Description: specific website/app blocks
+*/
+/*@import 'block.nav.css';*/
+/*@import 'block.header.css';*/
+/*@import 'block.search.css';*/
+/*@import 'block.footer.css';*/
+
+/**
+* Import: views
+* Description: specific website/app views (example: 404 view, login view)
+*/
+
+/**
+* Import: utils
+* Description: reusable utilities such as floats, spacers etc.
+*/
+/*@import 'utils.spacers.css';*/
+/*@import 'utils.opacity.css';*/
+/*@import 'utils.type.css';*/
+
+/**
+* Import: plugins
+* Description: 3rd party code, external plugin CSS etc
+* Note: when importing code from a 3rd party it should be stripped off
+* any vendor prefixes since autoprefixer will use project specific vendor prefixes
+*/
+@import 'plugins.fontface.css';
+
+.vue-foldable-container {
+  transition: max-height 0.8s;
+}
+
+.vue-foldable-mask {
+  transition: opacity 3s;
+}
+/**
+* Import: shame
+* Description: CSS shame file
+* Note: to be avoided, exists only if REALLY necessary or legacy code
+*/
+
+/* @import shame.css"; */
+
+/*ng-scope mora biti 100% da npr. na booking.test:8000/rooms ne bude bijelo na dnu page-a*/
+
+.btn-warning {
+  background-color: #0a709d;
+  border: none;
+}
+.btn-warning[disabled],
+.btn-warning[disabled]:focus,
+.btn-warning:hover {
+  background-color: rgba(10, 112, 157, 0.58);
+}
+
+.small-box h3 {
+  color: #fff;
+}
+
+.box {
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.small-box {
+  border-radius: 24px;
+  padding: 15px;
+}
+
+.skin-blue .main-header .navbar {
+  background-color: $brand-dark-blue;
+  font-family: $ff-serif;
+}
+
+.skin-blue .main-header .logo {
+  background-color: $brand-dark-blue;
+}
+
+.skin-blue .main-sidebar,
+.skin-blue .left-side {
+  background-color: #0a1e2d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 20px !important;
+}
+
+/* edo */
+.admin-btn__blue {
+  background: #009fda !important;
+  padding: 0 24px 0 24px;
+  font-size: 14px;
+  line-height: 36px;
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}

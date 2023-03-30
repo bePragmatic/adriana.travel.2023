@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    # component.btn-group
+\*------------------------------------*/
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-group > .btn {
+  @media (--screen-to-sml) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: calc($unit * 4);
+  }
+
+  @media (--screen-from-sml) {
+    margin-right: calc($unit * 4);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.btn-group--invertOnSmall {
+  @media (--screen-to-sml) {
+    flex-direction: column-reverse;
+  }
+}

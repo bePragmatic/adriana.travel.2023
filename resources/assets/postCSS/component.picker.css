@@ -1,0 +1,256 @@
+/*------------------------------------*\
+    # component.picker
+\*------------------------------------*/
+
+.picker {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px 24px;
+
+    @media (--screen-to-med) {
+        flex-direction: column;
+        padding: 16px 12px 0;
+    }
+}
+
+.picker--disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.picker__location {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+
+    @media (--screen-to-med) {
+        margin-bottom: 16px;
+    }
+
+    &:hover,
+    &:active {
+        .picker__location__icon {
+            stroke: $color-primary;
+        }
+
+        .picker__location__icon--disabled {
+            stroke: $color-dark;
+        }
+    }
+}
+
+.picker__location__icon {
+    stroke: $color-dark;
+}
+
+.picker__location__input,
+.picker__quantity__input {
+    width: 100%;
+    border: none;
+    @mixin type-scale $type-base, 6;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 7px;
+    color: color($color-dark a(0.6));
+    font-family: $ff-sans;
+
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+}
+
+.picker__date-quantity {
+    display: flex;
+    flex: 3;
+
+    @media (--screen-to-med) {
+        border-top: 1px solid color($color-dark a(0.2));
+    }
+}
+
+/* Datepicker is default name for HotelDatePicker component */
+
+.datepicker {
+    @media (--screen-from-med) {
+        transform: translateX(-25%);
+    }
+}
+
+.datepicker__wrapper {
+    flex: 3;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACrSURBVHgBrZKxDYMwEEV/EDKVq1SZI3OkSpUulYfKAqmyQHZgByqYASrukI0suJPg4Enfsr9PXzr7gDUv6DxJfmkWQqGHjpPMC+keZaEh/XkTSBVscHvX1E4PGwPJlfEQcIAU8oGNBy+Fcsm9OsETf04L4YBK8LAnZBdltp++KztLk5t73/wiKMV+g8cPezulHS2Eh6jf4E2kN3GxKPETaiVvDqlJb9hoSd0IWxwUZqXiTF4AAAAASUVORK5CYII=')
+        no-repeat 15px/15px !important;
+    background-position: 22px 16px !important;
+
+    &:hover,
+    &:active {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVHgBrZK9CsIwFIVPkw5awcVVJ7Hg7mPoMwhdnMVNHMVNHEVQQfANfA0HN6niI7gItoItsbH+po3W2m9JcnI55OReQGS67UHGdNPBbJ0TZRKsZDlIUbRQFeN1DYRWEQtlBaM0VK8G50MTjYqFX+Hx5tu8HyeOAYcxGy7R1JvjCH/gmxh6A3GYmC2+kNBLnnW01AJaSHvlJryVqUw6oEkgSAD1sePPBQr+gQEu7XnaS6mgUbcNRzQx9O7T0Bt96vRRL+8/ahMTicWRmDALp6P9XbvDB01sZ1T4nMx2ugpKF0B28P6JEVEUE/Xi5gJWb1LlySJkUwAAAABJRU5ErkJggg==')
+            no-repeat 15px/15px !important;
+        background-position: 22px 16px !important;
+    }
+
+    @media (--screen-to-med) {
+        background-position: 0 16px !important;
+        flex: 4;
+
+        &:hover,
+        &:active {
+            background-position: 0 16px !important;
+        }
+    }
+
+    @media (max-width: 480px) {
+        flex: 5;
+    }
+}
+
+.datepicker__dummy-wrapper {
+    border: none !important;
+}
+
+.datepicker__input {
+    padding-left: 24px !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    color: color($color-dark a(0.6)) !important;
+    font-family: $ff-sans;
+    display: flex;
+    align-items: center;
+
+    &:focus {
+        outline: none !important;
+    }
+
+    @media (--screen-to-med) {
+        text-indent: 0 !important;
+        padding-right: 15px;
+
+        & + & {
+            padding-left: 15px !important;
+            padding-right: 15px;
+        }
+    }
+
+    &:first-child {
+        background: transparent
+            url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAYAAAAFKSQHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAbSURBVHgBlcABAQAAAAEgHphiiP932CDKKU4DTOEBjfDKIlsAAAAASUVORK5CYII=')
+            no-repeat 100%/8px !important;
+        background-position-y: 44% !important;
+
+        @media (--screen-from-med) {
+            border-left: 1px solid color($color-dark a(0.1));
+        }
+    }
+}
+
+.datepicker--open {
+    border-radius: $global-radial;
+
+    @media (--screen-from-med) {
+        padding-top: 10px !important;
+    }
+}
+
+.datepicker__close-button {
+    color: $color-primary !important;
+}
+
+.datepicker__months {
+    &::before {
+        background: none !important;
+    }
+
+    @media (--screen-to-med) {
+        overflow: hidden !important;
+    }
+}
+
+.datepicker__month {
+    @media (--screen-to-med) {
+        padding-left: 20px !important;
+    }
+}
+
+.datepicker__month-day,
+.datepicker__month-day--disabled {
+    width: calc($unit * 9) !important;
+    height: calc($unit * 9) !important;
+    font-family: $ff-sans;
+    background: #f6f6f6 !important;
+    border-radius: $global-radial;
+    margin-top: 4px !important;
+    border: none !important;
+}
+
+.datepicker__month-day {
+    color: $color-secondary !important;
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+.datepicker__month-day--disabled {
+    color: color($color-dark a(0.2));
+    opacity: 1 !important;
+}
+
+.datepicker__month-day--hidden {
+    color: $color-light !important;
+}
+
+.datepicker__month-day--first-day-selected,
+.datepicker__month-day--selected {
+    background-color: $color-primary !important;
+    color: #ffffff !important;
+}
+
+.datepicker__month-button {
+    background: transparent
+        url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAALCAYAAABcUvyWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB8SURBVHgBbY7BDUVAFEXPzF/92CjB0lYJKqAEOlGCBmSoQFSgBEtBEzYsMSHETNzkLd47N/c+UL13jiUJIoZfa0NJ6uewVxfs3BuIx6KGTK8RLCFpMAsj+AWlWbnqWOHBP7GAU8PWXL1PzKh0VGkaP4+FLlRTzade/986AKIrJuaMD1PoAAAAAElFTkSuQmCC')
+        no-repeat 50%/8px !important;
+    height: 30px !important;
+    width: 30px !important;
+    border: 1px solid $color-primary;
+    border-radius: 30px;
+    position: relative;
+    top: -18px;
+}
+
+.picker__quantity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 2;
+
+    &:hover,
+    &:active {
+        .picker__quantity__icon {
+            stroke: $color-primary;
+        }
+
+        .picker__quantity__icon--disabled {
+            stroke: $color-dark;
+        }
+    }
+
+    @media (--screen-to-med) {
+        flex: 1;
+    }
+
+    @media (--screen-from-med) {
+        border-left: 1px solid color($color-dark a(0.1));
+        padding-left: 20px;
+    }
+}
+
+.picker__quantity__icon {
+    stroke: $color-dark;
+
+    @media (--screen-to-med) {
+        width: 100%;
+    }
+}

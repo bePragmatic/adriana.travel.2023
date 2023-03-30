@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    # block.header
+\*------------------------------------*/
+
+.header {
+  border-radius: 0 0 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc($unit * 5) calc($unit * 5) calc($unit * 5) calc($unit * 5);
+
+  @media (--screen-from-xlrg) {
+    background: color($color-secondary a(0.8));
+    padding: calc($unit * 0) calc($unit * 14);
+  }
+}
+
+.header__branding {
+  width: 102px;
+  height: 24px;
+
+  background: url('/assets/logo.svg') no-repeat center center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &--sm-dark {
+    @media (--screen-to-xlrg) {
+      background: url('/assets/logo.svg') no-repeat center center;
+    }
+  }
+}

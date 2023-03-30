@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    # component.split-view
+\*------------------------------------*/
+
+.split-view {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    &__primary {
+        flex: 1 1 auto;
+    }
+
+    &__secondary {
+        flex: 0 1 auto;
+    }
+}

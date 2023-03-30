@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    # vars.globals
+\*------------------------------------*/
+
+/**
+ * The $unit variable is a global variable to be used
+ * in paddings, margins, for sizing and positioning
+ */
+$unit: 4px;
+
+/**
+ * The $spacer variable is a global variable to be used
+ * in to create a unified spacer for all kinds of elements
+ */
+$spacer: calc($unit * 4);
+
+/**
+ * Global class prefix - usage: .$(global-prefix)classname
+ */
+$global-prefix: pr-;
+
+/**
+ * Global radius and rounded
+ */
+$global-radial: 6px;
+$global-radial-large: 24px;
+
+@lost flexbox flex;
+
+/** 
+Header height for mobile
+*/
+
+$mobile-header-height: 480px;

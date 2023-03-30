@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    # vars.typography
+\*------------------------------------*/
+
+/**
+ * Project base line height (unitless in order to work with typomatic)
+ */
+$base-line-height: 22;
+$base-font-size: 16;
+
+/**
+ * Type scale sizes must be entered in their pixel size
+ * (unitless in order to work with typomatic)
+ * Default type scale ratio: 1.333;
+ */
+$type-tiny: 12; /*iota*/
+$type-small: 14; /*theta*/
+$type-base: $base-font-size; /*eta*/
+$type-medium: 19; /*zeta*/
+$type-large: 21; /*epsilon*/
+$type-ylarge: 28;
+$type-xlarge: 31; /*delta*/
+$type-xxlarge: 36; /*gamma*/
+$type-xxxlarge: 43; /*beta*/
+$type-huge: 53; /*alpha*/
+
+/** 
+ * Type weights
+ */
+$type-weight-thin: 100;
+$type-weight-light: 300;
+$type-weight-regular: 400;
+$type-weight-medium: 500;
+$type-weight-bold: 700;
+
+/**
+ * Font stacks
+ */
+$ff-sans: 'DM Sans', sans-serif;
+$ff-serif: 'DM Serif Display', serif;

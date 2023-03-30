@@ -1,0 +1,21 @@
+.emptystate-message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.emptysate-message-element {
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.emptysate-message-sub-element {
+  padding: 10px;
+  text-align: center;
+  width: auto;
+}

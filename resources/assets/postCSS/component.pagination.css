@@ -1,0 +1,112 @@
+/*------------------------------------*\
+    # component.pagination
+\*------------------------------------*/
+
+.pagination {
+    text-align: center;
+
+    &:active {
+        .pagination__btn {
+            border: 1px solid $color-secondary;
+        }
+
+        .pagination__btn__arrow {
+            border-color: $color-secondary;
+        }
+    }
+}
+
+.pagination__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid $color-primary;
+    padding-top: 0;
+    padding-bottom: 0;
+    outline: none;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+
+    &:hover,
+    &:active {
+        border: 1px solid $color-secondary;
+
+        &:after {
+            border-color: $color-secondary;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: 8px;
+        border: solid $color-primary;
+        transition: all .15s ease-in-out;
+    }
+    
+    &--right:after {
+        left: 7px;
+        border-width: 0 1px 1px 0;
+        padding: 3px;
+        transform: rotate(-45deg);
+    }
+
+    &--left:after {
+        left: 9px;
+        border-width: 0 1px 1px 0;
+        padding: 3px;
+        transform: rotate(135deg);
+    }
+}
+
+.pagination__pages {
+    margin: 0 calc($unit * 5);
+
+    @media (--screen-from-sml) {
+        margin: 0 calc($unit * 10);
+    }
+}
+
+.pagination__page {
+    color: $color-primary;
+    padding: 0 calc($unit * 3);
+
+    @media (--screen-from-sml) {
+        padding: 0 calc($unit * 4);
+    }
+
+    &:hover {
+        color: $color-secondary;
+    }
+}
+
+.pagination__dots {
+    padding: 0 calc($unit * 2);
+    color: color($color-secondary a(.6));
+
+    @media (--screen-from-sml) {
+        padding: 0 calc($unit * 4);
+    }
+}
+
+.pagination__page--active {
+    color: $color-secondary;
+}
+
+.pagination__results {
+    @mixin type-scale $type-small, 5;
+    opacity: 0.6;
+    padding-top: calc($unit * 2);
+}

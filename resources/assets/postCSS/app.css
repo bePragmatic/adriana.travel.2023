@@ -1,0 +1,180 @@
+/**
+* Title: Protogator
+* Author/s: Prototyp
+* CSS build platform: Yarn
+* CSS development build command: yarn
+* CSS production build command: yarn build
+* CSS processor: PostCSS
+* CSS processor usage: autoprefixing, nesting, variables, minification, pxtorem, color functions
+* CSS name convention: BEM
+* Global indentation: 4 spaces
+* Global units: px
+* Global prefix: none
+* Browser support: IE10+, last 3 versions of modern browsers
+* Additional notes:
+*/
+
+/**
+* Import: vars
+* Description: variables
+*/
+
+@import 'vars.globals.css';
+@import 'vars.typography.css';
+@import 'vars.responsive.css';
+@import 'vars.colors.css';
+
+/**
+* Import: tools
+* Description: tools like typomatic and other mixins / libraries
+*/
+@import 'tools.typomatic.css';
+
+/**
+* Import: generic
+* Description: normalize or reset CSS, box sizing
+*/
+@import 'generic.boxsizing.css';
+
+/**
+* Import: base
+* Description: base structural stylings for setting the body, typography
+* and other base styles (no classes should be added here)
+*/
+@import 'base.globals.css';
+@import 'base.typography.css';
+
+/**
+* Import: component
+* Description: cross project reusable
+*/
+@import 'component.wrapper.css';
+@import 'component.btn.css';
+@import 'component.btn-group.css';
+@import 'component.hamburger.css';
+@import 'component.input.css';
+@import 'component.field.css';
+@import 'component.toggle.css';
+@import 'component.pagination.css';
+@import 'component.counter.css';
+@import 'component.range.css';
+@import 'component.picker.css';
+@import 'component.split-view.css';
+@import 'component.filter.css';
+@import 'component.d-item.css';
+@import 'component.ds.css';
+@import 'component.newsletter.css';
+@import 'component.datepicker.css';
+@import 'component.emptystate.css';
+
+/**
+* Import: block
+* Description: specific website/app blocks
+*/
+@import 'block.nav.css';
+@import 'block.header.css';
+@import 'block.search.css';
+@import 'block.footer.css';
+
+/**
+* Import: views
+* Description: specific website/app views (example: 404 view, login view)
+*/
+@import 'view.acommodation.css';
+@import 'view.explore.css';
+@import 'view.homepage.css';
+@import 'view.searchaccommodation.css';
+@import 'view.serviceandactivities.css';
+@import 'view.rogoznica.css';
+@import 'view.blog.css';
+@import 'view.blogpost.css';
+@import 'view.forms.css';
+@import 'view.error.css';
+
+/**
+* Import: utils
+* Description: reusable utilities such as floats, spacers etc.
+*/
+@import 'utils.spacers.css';
+@import 'utils.opacity.css';
+@import 'utils.type.css';
+
+/** LOST LAYOUT GRID SYSTEM **/
+
+@import 'lost.services.css';
+@import 'lost.blog.css';
+
+/**
+* Import: plugins
+* Description: 3rd party code, external plugin CSS etc
+* Note: when importing code from a 3rd party it should be stripped off
+* any vendor prefixes since autoprefixer will use project specific vendor prefixes
+*/
+@import 'plugins.fontface.css';
+
+.vue-foldable-container {
+  transition: max-height 0.8s;
+}
+
+.vue-foldable-mask {
+  transition: opacity 3s;
+}
+/**
+* Import: shame
+* Description: CSS shame file
+* Note: to be avoided, exists only if REALLY necessary or legacy code
+*/
+
+/* @import shame.css"; */
+
+.vue-foldable {
+  position: relative;
+}
+
+.vue-foldable .vue-foldable-container {
+  overflow: hidden;
+}
+.vue-foldable-container {
+  transition: max-height 0.8s;
+}
+
+.vue-foldable .vue-foldable-mask {
+  position: absolute;
+  bottom: 30px /* view-more's height */;
+  height: 80px;
+  width: 100%;
+  background: transparent;
+  pointer-events: none;
+}
+.vue-foldable-mask {
+  transition: opacity 3s;
+}
+.vue-foldable .vue-foldable-mask:not(.collapsed) {
+  opacity: 0;
+}
+.vue-foldable .vue-foldable-view-more {
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  color: #4dba87;
+}
+
+.vue-foldable .vue-foldable-view-more .vue-foldable-icon {
+  width: 22px;
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+  vertical-align: middle;
+}
+
+.vue-foldable-icon {
+  display: none !important;
+}
+.vue-foldable .vue-foldable-view-more .vue-foldable-text {
+  vertical-align: middle;
+}
+.vue-foldable-text {
+  color: #009fda !important;
+  margin-top: 1em !important;
+}

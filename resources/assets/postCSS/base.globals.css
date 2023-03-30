@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    # base.globals
+\*------------------------------------*/
+
+/**
+ * Initialize typomatic in project (sets font-size and line-height
+ * on html selector.
+ */
+
+html {
+    @mixin typomatic-init;
+    /* background: $color-tertiary;  // breaks video if included */
+
+    /* Lock scrolling on mobile nav open */
+    &.is-locked {
+        overflow: hidden;
+    }
+}
+
+body {
+    position: relative;
+    font-family: $ff-sans;
+    color: color($color-text a(.6));
+    background: white;
+    
+    @media (--screen-from-med) {
+        background: $color-bg;
+    }
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+svg {
+    max-width: 100%;
+}

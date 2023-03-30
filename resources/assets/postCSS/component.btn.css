@@ -1,0 +1,201 @@
+/*------------------------------------*\
+    # component.btn
+\*------------------------------------*/
+
+.btn {
+  /**
+     * Button base
+     */
+  /*display: inline-flex;*/
+
+  touch-action: manipulation;
+  user-select: none;
+  border-radius: $global-radial;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+  background: $color-light;
+
+  transition: all 0.15s ease-in-out;
+
+  &:focus {
+    outline: 0;
+  }
+
+  /**
+     * Button base project styling
+     */
+  height: calc($unit * 10);
+  line-height: calc($unit * 10);
+  font-family: $ff-sans;
+  font-weight: $type-weight-regular;
+  letter-spacing: 0.02em;
+}
+
+/**
+ * Button styles
+  */
+
+.btn--primary {
+  background: $color-primary;
+  color: $color-light;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-light;
+  }
+
+  &:active {
+    background-color: $color-secondary;
+    opacity: 0.8;
+  }
+
+  /**
+    * Disabled
+    */
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+    background-color: $color-quaternary;
+  }
+}
+
+.btn--secondary {
+  background: $color-light;
+  color: $color-primary;
+  border: 1px solid $color-primary;
+
+  &:hover,
+  &:focus {
+    border-color: $color-primary-light;
+    color: $color-primary-light;
+  }
+
+  &:active {
+    border-color: $color-secondary;
+    color: $color-secondary;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+    border-color: $color-quaternary;
+    color: $color-quaternary;
+  }
+}
+
+.success-page-btn-w {
+  width: 173px;
+}
+
+.btn--noborder {
+  border: none;
+}
+
+.btn--max-width {
+  @media (--screen-to-sml) {
+    min-width: 212px;
+    max-width: 212px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/**
+ * Button size
+*/
+
+.btn--med {
+  @mixin type-scale $type-small, 4;
+  height: calc($unit * 10);
+  padding: 0 calc($unit * 10);
+}
+
+/**
+ * Special cases
+*/
+.btn--no-padd {
+  padding: 0;
+}
+
+.btn--empty {
+  background: transparent;
+  color: color($color-secondary a(0.6));
+
+  &:hover,
+  &:focus {
+    border-color: $color-primary-light;
+    color: $color-primary-light;
+  }
+
+  &:active {
+    border-color: $color-secondary;
+    color: $color-secondary;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+    border-color: $color-quaternary;
+    color: $color-quaternary;
+  }
+}
+
+.btn--filter {
+  display: inline-flex;
+  @mixin type-scale $type-small, 4;
+  justify-content: center;
+  align-items: center;
+  background: url("data:image/svg+xml;utf8,<svg width='8' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1l6 6M7 1L1 7' stroke='white' /></svg>")
+    no-repeat calc(100% - 12px) center $color-quaternary;
+  color: white;
+  opacity: 0.6;
+  margin-right: calc($unit * 1);
+  margin-bottom: calc($unit * 1);
+
+  height: calc($unit * 9);
+  line-height: calc($unit * 9);
+  padding: 0 calc($unit * 7) 0 calc($unit * 3);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    border-color: $color-secondary;
+    color: $color-secondary;
+
+    background: url("data:image/svg+xml;utf8,<svg width='8' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1l6 6M7 1L1 7' stroke='%2310304c' /></svg>")
+      no-repeat calc(100% - 12px) center $color-quaternary;
+  }
+}
+
+.btn--date {
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  text-transform: none;
+  background-color: color($color-quaternary a(0.2));
+  color: $color-secondary;
+  margin: 0;
+  border-radius: $global-radial;
+  overflow: visible;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    background-color: $color-primary-light;
+    color: $color-light;
+  }
+
+  &:active,
+  &:focus {
+    color: $color-light;
+    background-color: $color-primary;
+  }
+}

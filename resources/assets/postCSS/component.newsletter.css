@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    # component.newsletter
+\*------------------------------------*/
+
+.newsletter {
+  background: white;
+  border-radius: 16px;
+  align-items: center;
+
+  @media (--screen-from-med) {
+    lost-center: 100%;
+    padding: calc($unit * 6) calc($unit * 10);
+  }
+
+  @media (--screen-from-lrg) {
+    lost-column: 10/12;
+    lost-offset: 1/12;
+  }
+}
+
+.newsletter__title {
+  @mixin type-scale $type-large, 7;
+
+  @media (--screen-from-med) {
+    lost-column: 5/12;
+  }
+}
+
+.newsletter__input {
+  margin: calc($unit * 3) 0;
+  @media (--screen-from-med) {
+    lost-column: 4/12;
+  }
+}
+
+.newsletter__error {
+  margin-bottom: -10px;
+  @media (--screen-to-med) {
+    margin-bottom: 0;
+  }
+}
+
+.newsletter__errorHide {
+  visibility: hidden;
+}
+
+.newsletterSuccess__hidden {
+  display: none;
+}
+
+.newsletterSuccess__show {
+  display: block !important;
+}
+
+.newsletter__button {
+  @media (--screen-from-med) {
+    lost-column: 3/12;
+  }
+}

@@ -1,0 +1,168 @@
+.service-list {
+  lost-center: 100%;
+  padding-bottom: 1.2em;
+}
+
+.wrapper-service {
+  @media (--screen-to-med) {
+  }
+}
+
+.service-textbox__icon {
+  @media (--screen-to-med) {
+    height: 78px !important;
+    width: 78px !important;
+    max-width: none !important;
+  }
+}
+
+.service-element__container {
+  display: flex;
+  flex-direction: column;
+  lost-column: 1/2;
+  margin-bottom: 4em;
+  @media (--screen-to-med) {
+    lost-column: 1/1;
+    margin-bottom: 2em;
+  }
+}
+
+.service-element__title-container {
+}
+
+.service-element__image-container {
+}
+
+.service-element__image-1 {
+  background: url('/images/vibrant-cities.jpg') no-repeat;
+  height: 22vw;
+  background-position: center;
+  max-width: 550px;
+  max-height: 276px;
+  background-size: cover;
+  border-radius: 20px;
+  @media (--screen-to-med) {
+    height: 52vw;
+    max-width: none;
+  }
+}
+
+.service-element__image-2 {
+  background: url('/images/off-beat-destinations.jpg') no-repeat;
+
+  height: 22vw;
+  background-position: center;
+  max-width: 550px;
+  max-height: 276px;
+  background-size: cover;
+  border-radius: 20px;
+  @media (--screen-to-med) {
+    height: 52vw;
+    max-width: none;
+  }
+}
+
+.service-element__image-3 {
+  background: url('/images/breathtaking-outdoors.jpg') no-repeat;
+
+  height: 22vw;
+  background-position: center;
+  max-width: 550px;
+  max-height: 276px;
+  background-size: cover;
+  border-radius: 20px;
+  @media (--screen-to-med) {
+    height: 52vw;
+    max-width: none;
+  }
+}
+
+.service-element__image-4 {
+  background: url('/images/cuisine-from-another.jpg') no-repeat;
+
+  height: 22vw;
+  background-position: center;
+  max-width: 550px;
+  max-height: 276px;
+  background-size: cover;
+  border-radius: 20px;
+  @media (--screen-to-med) {
+    height: 52vw;
+    max-width: none;
+  }
+}
+
+.service-element--icon-position {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.service-element__icon-container {
+  position: relative;
+  /* top: -16%; */
+  top: -42px;
+  right: 22px;
+
+  @media (--screen-to-med) {
+    display: none;
+  }
+}
+
+.service-element__text-container {
+  max-width: 550px;
+  @media (--screen-to-med) {
+    max-width: none;
+  }
+}
+
+.service-subscribe--visibility {
+  @media (--screen-to-med) {
+    display: none;
+  }
+}
+
+.transfer--padding-top-3 {
+  padding-top: 3rem;
+  @media (--screen-to-med) {
+    padding-top: 0;
+  }
+}
+
+.transfer--padding-top-1 {
+  padding-top: 1rem;
+  @media (--screen-to-med) {
+    padding-top: 0;
+  }
+}
+
+.transfer-to-column {
+  @media (--screen-to-sml) {
+    flex-direction: column;
+  }
+}
+
+.services--padding-top-4 {
+  padding-top: 4rem;
+  @media (--screen-to-sml) {
+    padding-top: 0;
+  }
+}
+
+.transfer--padding-bottom-4 {
+  padding-bottom: 4rem;
+  @media (--screen-to-sml) {
+    padding-bottom: 0;
+  }
+}
+
+.service__title {
+  @media (--screen-to-med) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+.service-element__icon {
+  background: white;
+  border-radius: 50%;
+}

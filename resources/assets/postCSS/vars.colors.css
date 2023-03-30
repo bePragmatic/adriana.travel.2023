@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    # vars.colors
+\*------------------------------------*/
+
+/**
+ * Generic colors
+ * Color naming taken from: http://www.color-blindness.com/color-name-hue/
+ */
+
+/**
+ * Brand colors
+ */
+$brand-blue: #009fda; /* 008cef */
+$brand-dark-blue: #10304c;
+$brand-rogoznica-blue: #eff3f5;
+$brand-rogoznica-light-blue: #6dc4e4;
+$brand-gray: #8b8c8c;
+$brand-black: #000000;
+$brand-white: #ffffff;
+$brand-yellow: #eecb11;
+
+/**
+ * Global text color
+ */
+$color-text: $brand-black;
+
+/**
+ * Theme colors
+ */
+$color-primary: $brand-blue;
+$color-primary-light: $brand-rogoznica-light-blue;
+$color-secondary: $brand-dark-blue;
+$color-tertiary: $brand-rogoznica-blue;
+$color-quaternary: $brand-gray;
+$color-stars: $brand-yellow;
+$color-bg: #EFF3F5;
+$color-light: $brand-white;
+$color-dark: $brand-black;
+/**
+ * Utility colors
+ */
+$color-warning: #eb4848;

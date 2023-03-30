@@ -1,0 +1,20 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b)">
+<circle cx="40" cy="40" r="40" fill="white"/>
+</g>
+<path d="M58.5 36.5L56.731 23.236C56.599 22.242 55.751 21.5 54.749 21.5H26.251C25.249 21.5 24.401 22.242 24.269 23.236L22.5 36.5" stroke="#009FDA" stroke-miterlimit="10"/>
+<path d="M30.5 53.5V59.5H21.5V53.5" stroke="#10304C" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M59.5 53.5V59.5H50.5V53.5" stroke="#10304C" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M62.5 53.5H18.5V42.903C18.5 41.995 18.809 41.113 19.377 40.404L22.5 36.5H58.5L61.623 40.404C62.191 41.114 62.5 41.995 62.5 42.903V53.5Z" stroke="#10304C" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M54.5 48.5C56.1569 48.5 57.5 47.1569 57.5 45.5C57.5 43.8431 56.1569 42.5 54.5 42.5C52.8431 42.5 51.5 43.8431 51.5 45.5C51.5 47.1569 52.8431 48.5 54.5 48.5Z" stroke="#009FDA" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M26.5 48.5C28.1569 48.5 29.5 47.1569 29.5 45.5C29.5 43.8431 28.1569 42.5 26.5 42.5C24.8431 42.5 23.5 43.8431 23.5 45.5C23.5 47.1569 24.8431 48.5 26.5 48.5Z" stroke="#009FDA" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M37.5 45.5H43.5" stroke="#10304C" stroke-miterlimit="10" stroke-linecap="square"/>
+<defs>
+<filter id="filter0_b" x="-4" y="-4" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+</defs>
+</svg>
