@@ -4,7 +4,14 @@
   <div class="nav__lang-select desk">
     <div class="nav__lang">{{ defualt.toUpperCase() }}</div>
     <ul class="nav__lang-popover">
-        
+      <li>
+        <a
+          @click.prevent="changeLanguage('hr')"
+          v-bind:class="[defualt == 'hr' ? 'active' : '']"
+        >
+          Hrvatski
+        </a>
+      </li>  
       <li>
         <a
           @click.prevent="changeLanguage('de')"
@@ -13,14 +20,7 @@
           Deutsch
         </a>
       </li>
-      <li>
-        <a
-          @click.prevent="changeLanguage('hr')"
-          v-bind:class="[defualt == 'hr' ? 'active' : '']"
-        >
-          Hrvatski
-        </a>
-      </li>
+      
     <li>
         <a
           class=""

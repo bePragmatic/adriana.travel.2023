@@ -1,17 +1,17 @@
 <template>
   <!-- desktop -->
   <div class="nav__mobile-lang">
- 
-    <a
-      @click.prevent="changeLanguage('de')"
-      v-bind:class="[defualt == 'de' ? 'active' : '']"
-      >DE</a
-    >
     <a
       @click.prevent="changeLanguage('hr')"
       v-bind:class="[defualt == 'hr' ? 'active' : '']"
       >HR</a
     >
+    <a
+      @click.prevent="changeLanguage('de')"
+      v-bind:class="[defualt == 'de' ? 'active' : '']"
+      >DE</a
+    >
+    
       <a
       class=""
       @click.prevent="changeLanguage('en')"
