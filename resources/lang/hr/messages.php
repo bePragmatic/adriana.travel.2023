@@ -1155,10 +1155,9 @@ return [
     'services-activities' => [
         // 'anywhere_you_please' => 'Gdje god poželite u trenutku',
         'anywhere_you_please' => 'Rezervirajte i uštedite!',
-
+ 
         // 'stress-free' => ' Dozvolite nam da učinimo Vaš odmor potpunim užitkom bez stresa',
         'stress-free' => 'Rezervirajte naše smještaje i uživajte u posebnim cijenama naših partnera',
-
         'to_miss' => 'Ne želite propustiti',
         'vibrant_cities' => 'Dinamični gradovi',
         'vibrant_cities_desc' => 'Šarmanti i inspirativni dalmatinski gradovi opasani zidinama poput Zadra, Šibenika, Splita ili Dubrovnika, proslavili su ovu regiju. Iako slični, svaki je poseban na svoj način. Krcati povijesnim i modernim atrakcijama, ovi dragulji s najljepših razglednica zaštićeni od strane UNESCO-a, lako bi mogli zadovoljiti i vaša najveća očekivanja.',
@@ -1187,7 +1186,17 @@ return [
         'rogoznica' => 'Rogoznica',
         'rent_a_boat_main' => 'Neka vaš odmor poprimi sasvim novu dimenziju, iznajmite brod i krenite u istraživanje!',
         'rent_a_boat_sub' => 'Iznajmite naše brodove i otplovite na nezaboravnu otočnu avanturu!'
-
+        'welcome_to_our_modern_sporty' => 'test to our modern sporty motorboat which has great maritime characteristics and it is very stable at sea. Boat is well equipped and it has everything you need for your dream vacation! It can fit up to 7 people and it is ready to be taken out on Adriatic Sea.As of this year, the ship has a new Yamaha 115 Hp engine, which is very environmentally friendly and with lower fuel consumption. It also has a new bimini, shower and radio.',
+		'it_is_situated_in_the_beautiful_bay_between'=>'It is situated in the beautiful bay between Rogoznica and Marina, the bay name is Sičenica. In our bay, where the boat is on the berth, you have free parking.
+		In our area, there are a lot of great and interesting things and places to visit, as Trogir, Rogoznica, Sevid, Punta Planka, Lighthouse Mulo, Smokvica, Dragon´s eye lake...
+		With our boat, you can visit many beautiful bays like Stari Trogir, Borovica, Ražanj, Rogoznica and islands such as Drvenik, Šolta, Čiovo, Brač, Žirje, ecc.',
+		'if_you_dont_have_any_nautical_knowledge'=>"If you don't have any nautical knowledge or licence you don't have to be worried because we can offer you one of our professional skipper and price is 100 euro per day.",
+		'if_you_have_any_other_questions'=>'If you have any other questions, please contact me.',
+		'hope_to_see_you_soon'=> 'Hope to see you soon!',
+		'this_is_a_new_boat'=>'This is a new boat, with a new engine. It is situated in the bay of Sičenica between Rogoznica and Sevid. The Yamaha engine has 115 hp.
+		It has a capacity for 7 people.',
+		'this_boat_has_excellent_maritime_characteristics'=> 'This boat has excellent maritime characteristics and it is very stable at sea. It also has a new bimini, shower, and radio.',
+		'you_have_free_parking_in_our_bay'=>'You have free parking in our bay of Sičenica, where the boat is on the berth. In our area, there are a lot of things and places to visit, such as Trogir, Rogoznica, Ražanj, Sevid, Punta Planka, Lighthouse Mulo...',
     ],
 
     'rogoznica' => [
